@@ -3,11 +3,11 @@ CC      = cc
 TARGET  = file-rom-bin
 SRC_DIR = src
 OBJ_DIR = obj
-CFLAGS  = $(shell pkg-config --cflags gtk+-2.0) \
-          $(shell pkg-config --cflags gimp-2.0)
+CFLAGS  = $(shell pkg-config --cflags gtk+-3.0) \
+          $(shell pkg-config --cflags gimp-3.0)
 LFLAGS  = $(shell pkg-config --libs glib-2.0) \
-          $(shell pkg-config --libs gtk+-2.0) \
-          $(shell pkg-config --libs gimp-2.0) \
+          $(shell pkg-config --libs gtk+-3.0) \
+          $(shell pkg-config --libs gimp-3.0) \
           $(shell pkg-config --libs gimpui-2.0)
 
 # File definitions
